@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net47</TargetFramework>
+    <TargetFramework>net47</TargetFramework>
+    <RootNamespace>BioFSharp.Parallel.Tests</RootNamespace>
+    <AssemblyName>BioFSharp.Parallel.Tests</AssemblyName>
+    <Name>BioFSharp.Parallel.Tests</Name>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Sample.fs" />
+    <Compile Include="Main.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="4.*"/>
+    <PackageReference Include="Expecto" Version="9.*" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\BioFSharp.Parallel\BioFSharp.Parallel.fsproj" />
+  </ItemGroup>
+</Project>
